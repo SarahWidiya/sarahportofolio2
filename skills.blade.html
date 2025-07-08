@@ -7,25 +7,73 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Skills - Sarah Widiya</title>
+  <style>
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+      padding: 10rem 9%;
+      background-color: #191919;
+      color: white;
+    }
+
+    .home-img img {
+      width: 24vw;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .home-content {
+      flex: 1;
+    }
+
+    .home-content h1 {
+      font-size: 4rem;
+      color: #e3651d;
+      margin-bottom: 1rem;
+    }
+
+    .home-content p,
+    .home-content li {
+      font-size: 1.6rem;
+      color: #ccc;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-img img {
+        width: 50vw;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <a href="#" class="logo">Sarah Widiya</a>
+    <a href="index.html" class="logo">Sarah Widiya</a>
     <nav>
-     <a href="introduction.html">Introduction</a>
-<a href="skills.html">Skills</a>
-<a href="vm.html">V&M</a>
-<a href="myproject.html">My Project</a>
-<a href="contact.html">Contact</a>
-
+      <a href="index.html">Home</a>
+      <a href="introduction.html">Introduction</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="v&m.html">V&M</a>
+      <a href="myproject.html">My Project</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="home">
     <div class="home-img">
-      <img src="image/figma.png" alt="Sarah Widiya" style="width: 24vw; border-radius: 50%;">
+      <img src="image/figma.png" alt="Sarah Widiya">
     </div>
 
     <div class="home-content">
